@@ -1,0 +1,174 @@
+{
+  "uuid": "2acc6ed5-3bf2-47ae-8742-0715c942e878",
+  "lastMigration": 27,
+  "name": "Taskmanager",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 7082,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ffe5742f-d37e-4573-9756-cb67951def99",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "task/list",
+      "responses": [
+        {
+          "uuid": "660055fe-b953-4893-a9c5-ee7ede8868c6",
+          "body": "{\n  \"issues\": [\n    {\n      \"id\": \"712001\",\n      \"key\": \"2000\",\n      \"fields\": {\n        \"timeestimate\": 0,\n        \"assignee\": {\n          \"name\": \"Person 1\",\n          \"key\": \"person1\",\n          \"emailAddress\": \"person1@gmail.com\",\n          \"displayName\": \"Person 1 Name\",\n          \"active\": true,\n          \"timeZone\": \"Asia/Kathmandu\"\n        },\n        \"components\": [\n          {\n            \"id\": \"18706\",\n            \"name\": \"Android\"\n          },\n          {\n            \"id\": \"18101\",\n            \"name\": \"App\"\n          }\n        ],\n        \"creator\": {\n          \"name\": \"Creator\",\n          \"key\": \"creator1\",\n          \"emailAddress\": \"creator1@gmail.com\",\n          \"displayName\": \"Creator 1 Name\",\n          \"active\": true,\n          \"timeZone\": \"Asia/Kathmandu\"\n        },\n        \"reporter\": {\n          \"name\": \"Reporter 1\",\n          \"key\": \"reporter1\",\n          \"emailAddress\": \"reporter1@gmail.com\",\n          \"displayName\": \"Reporter 1 Name\",\n          \"active\": true,\n          \"timeZone\": \"Asia/Kathmandu\"\n        },\n        \"timespent\": 15000,\n        \"created\": \"2023-06-07T07:35:01.000+0545\",\n        \"updated\": \"2023-06-07T17:11:16.000+0545\",\n        \"summary\": \"Integrate Feature 1\",\n        \"duedate\": \"2023-06-07T07:35:01.000+0545\",\n        \"priority\": {\n          \"iconUrl\": \"https://previews.123rf.com/images/dzm1try/dzm1try2001/dzm1try200100126/137677567-high-medium-low-priority-icon-set-clipart-image-isolated-on-white-background.jpg\",\n          \"name\": \"Low\"\n        },\n        \"progress\": {\n          \"percent\": 100\n        }\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "29a2b4c5-ef89-4b2f-b964-c870da975f78",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user/accounts",
+      "responses": [
+        {
+          "uuid": "ae4e10ce-ee38-46cc-b6b1-dee6e595d6bc",
+          "body": "{\n  \"success\": true,\n  \"accounts\": [\n    {\n      \"type\": \"Savings\",\n      \"number\": \"123456789\",\n      \"primary\": \"Y\"\n    },\n    {\n      \"type\": \"Normal Savings\",\n      \"number\": \"54312324532\",\n      \"primary\": \"N\"\n    },\n    {\n      \"type\": \"Super Savings\",\n      \"number\": \"0933232131\",\n      \"primary\": \"N\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "dd40466c-a85a-42a7-b1de-6e29390c5642",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "branches",
+      "responses": [
+        {
+          "uuid": "7dec9862-7cee-4a39-b908-92c4950054c4",
+          "body": "{\n  \"success\": true,\n  \"branches\": [\n    {\n      \"name\": \"Kalanki\",\n      \"code\": \"BR-KA\"\n    },\n    {\n      \"name\": \"Pulchowk\",\n      \"code\": \"BR-PU\"\n    },\n    {\n      \"name\": \"Baneshwor\",\n      \"code\": \"BR-BA\"\n    },\n    {\n      \"name\": \"Kritipur\",\n      \"code\": \"BR-KR\"\n    },\n    {\n      \"name\": \"Balkhu\",\n      \"code\": \"BR-BAL\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5c84d3fd-499d-490f-8f1f-d1c51f59c5aa",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "pin/options",
+      "responses": [
+        {
+          "uuid": "3db34631-a11e-4876-8863-9b724e8250e1",
+          "body": "{\n  \"success\": true,\n  \"options\": [\n    {\n      \"name\": \"Green Pin\",\n      \"code\": \"PIN-GP\",\n      \"info\": \"To generate a green PIN, please visit your nearest ATM with your new ATM card and follow the instruction provided through the ATM machine.\"\n    },\n    {\n      \"name\": \"Paper Pin\",\n      \"code\": \"PIN-PA\",\n      \"info\": \"You will be provided with a new PIN at the time you receive your card from your preferred branch.\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ffe5742f-d37e-4573-9756-cb67951def99"
+    },
+    {
+      "type": "route",
+      "uuid": "29a2b4c5-ef89-4b2f-b964-c870da975f78"
+    },
+    {
+      "type": "route",
+      "uuid": "dd40466c-a85a-42a7-b1de-6e29390c5642"
+    },
+    {
+      "type": "route",
+      "uuid": "5c84d3fd-499d-490f-8f1f-d1c51f59c5aa"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
